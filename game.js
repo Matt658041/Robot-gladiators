@@ -1,4 +1,3 @@
-'use strict';
 const playerName = window.prompt("What is your robot's name?");
 let playerHealth = 100;
 let playerAttack = 10;
@@ -91,7 +90,7 @@ const startGame = function() {
       // if player is still alive and we're not at the last enemy in the array
       if (playerHealth > 0 && i < enemyNames.length - 1) {
         // ask if player wants to use the store before next round
-        let storeConfirm = window.confirm("The fight is over, visit the store before the next round?");
+        var storeConfirm = window.confirm("The fight is over, visit the store before the next round?");
       
         // if yes, take them to the store() function
         if (storeConfirm) {
@@ -183,3 +182,4 @@ const shop = function() {
 
 // start first game when page loads
 startGame();
+
