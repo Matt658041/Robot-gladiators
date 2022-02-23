@@ -57,7 +57,7 @@ var fight = function(enemy) {
         // if true, leave fight by breaking loop
         break;
       }
-
+      // Using random number in attack
       var damage = randomNumber(playerInfo.attack - 3, playerInfo.attack);
 
       // remove enemy's health by subtracting the amount we set in the damage variable
